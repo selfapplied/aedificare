@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 Example: How to Use CE1 System
@@ -20,16 +21,13 @@ def greet(name):
     """Greet someone by name"""
     return f"Hello, {name}!"
 
-
 def add_numbers(a, b):
     """Add two numbers together"""
     return a + b
 
-
 def process_list(items):
     """Process a list with high semantic density"""
     return [item * 2 for item in items if item > 0]
-
 
 if __name__ == "__main__":
     print(greet("John"))

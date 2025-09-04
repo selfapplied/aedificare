@@ -1,0 +1,551 @@
+{
+  "files": {
+    "ce1_domains.py": {
+      "hash": "24b2a0eb4b7bb57c5eb2eb18ce0c3f33",
+      "last_modified": 1756871689.6372452,
+      "imports": [
+        "__future__",
+        "numpy",
+        "typing",
+        "math",
+        "ce1_core",
+        "ce1_convolution",
+        "ce1_jets"
+      ],
+      "exports": [
+        "ZetaDomain",
+        "ChemicalDomain",
+        "DynamicalDomain",
+        "create_double_well_hamiltonian",
+        "create_reversible_chemical_system",
+        "analyze_zero",
+        "toy_model_experiment",
+        "find_equilibria",
+        "log_toric_analysis",
+        "find_critical_points",
+        "center_manifold_analysis",
+        "H",
+        "zeta_force",
+        "zeta_potential",
+        "zeta_constraint",
+        "completed_zeta",
+        "mass_action_force",
+        "chemical_potential",
+        "conservation_constraint",
+        "microswap_function",
+        "hamiltonian_force",
+        "kinetic_energy",
+        "energy_constraint",
+        "hamiltonian_value"
+      ],
+      "dependencies": [
+        "ce1_core.py",
+        "ce1_convolution.py",
+        "ce1_jets.py"
+      ],
+      "dependents": [
+        "ce1_framework.py"
+      ]
+    },
+    "interactive_analyzer.py": {
+      "hash": "138adba08932c9902bb5939eb3c92840",
+      "last_modified": 1756947284.157774,
+      "imports": [
+        "__future__",
+        "sys",
+        "typing",
+        "text_analyzer"
+      ],
+      "exports": [
+        "CE1InteractiveAnalyzer",
+        "interactive_mode",
+        "print_help",
+        "show_examples",
+        "batch_analysis_mode",
+        "main",
+        "analyze_user_text",
+        "compare_with_examples",
+        "suggest_improvements",
+        "generate_improved_version"
+      ],
+      "dependencies": [
+        "text_analyzer.py"
+      ],
+      "dependents": []
+    },
+    "ce1.py": {
+      "hash": "4908eb6c7b0b8924ebeb2a62c3ce9602",
+      "last_modified": 1756864717.6399713,
+      "imports": [
+        "__future__",
+        "argparse",
+        "os",
+        "time",
+        "math",
+        "typing",
+        "numpy",
+        "rh",
+        "rh",
+        "matplotlib"
+      ],
+      "exports": [
+        "run_curvature_mode",
+        "main",
+        "arr_to_str",
+        "norm_img"
+      ],
+      "dependencies": [],
+      "dependents": []
+    },
+    "text_analyzer.py": {
+      "hash": "8d98efe4991b8d2552ff160f7be85adc",
+      "last_modified": 1756947284.15357,
+      "imports": [
+        "__future__",
+        "re",
+        "numpy",
+        "typing",
+        "collections",
+        "dataclasses",
+        "english_morphology"
+      ],
+      "exports": [
+        "TextAnalysis",
+        "TextComparator",
+        "CE1TextGenerator",
+        "demonstrate_text_analysis",
+        "analyze_text",
+        "compare_texts",
+        "find_spec_derivations",
+        "generate_text",
+        "generate_spec_conforming_text",
+        "TextAnalyzer"
+      ],
+      "dependencies": [
+        "english_morphology.py"
+      ],
+      "dependents": [
+        "interactive_analyzer.py",
+        "text_comparison_demo.py"
+      ]
+    },
+    "language_genetics.py": {
+      "hash": "1d8d8354dcb1cc69ef3fc41c4f9d036c",
+      "last_modified": 1756947284.160522,
+      "imports": [
+        "__future__",
+        "numpy",
+        "random",
+        "typing",
+        "dataclasses",
+        "enum",
+        "collections",
+        "json",
+        "english_morphology"
+      ],
+      "exports": [
+        "GeneType",
+        "InheritanceType",
+        "LanguageGene",
+        "LanguageGenome",
+        "LanguageGenetics",
+        "demonstrate_language_genetics",
+        "create_language",
+        "evolve_generation",
+        "calculate_genetic_distance",
+        "build_phylogenetic_tree",
+        "find_common_ancestor",
+        "get_language_family",
+        "print_tree",
+        "build_subtree",
+        "add_descendants"
+      ],
+      "dependencies": [
+        "english_morphology.py"
+      ],
+      "dependents": []
+    },
+    "ce1_core.py": {
+      "hash": "8e4818db7101034a27523d5f426474f6",
+      "last_modified": 1756872988.7477171,
+      "imports": [
+        "__future__",
+        "numpy",
+        "typing",
+        "abc",
+        "math"
+      ],
+      "exports": [
+        "Involution",
+        "TimeReflectionInvolution",
+        "MomentumReflectionInvolution",
+        "MicroSwapInvolution",
+        "CE1Kernel",
+        "UnifiedEquilibriumOperator",
+        "create_zeta_ueo",
+        "create_dynamical_ueo",
+        "apply",
+        "fixed_points",
+        "verify_involution",
+        "apply",
+        "fixed_points",
+        "apply",
+        "fixed_points",
+        "apply",
+        "fixed_points",
+        "evaluate",
+        "operator_action",
+        "convolution_with",
+        "evaluate",
+        "jacobian",
+        "manifold_dimension",
+        "zeta_force",
+        "zeta_potential",
+        "zeta_constraint",
+        "completed_zeta",
+        "hamiltonian_force",
+        "hamiltonian_potential",
+        "hamiltonian_constraint",
+        "hamiltonian"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "ce1_domains.py",
+        "ce1_convolution.py",
+        "ce1_convolution.py",
+        "morphology_demo.py",
+        "ce1_framework.py",
+        "ce1_jets.py",
+        "ce1_jets.py"
+      ]
+    },
+    "ce1_convolution.py": {
+      "hash": "1d029234b350a3e1d78d6ee66315be2f",
+      "last_modified": 1756871689.6212432,
+      "imports": [
+        "__future__",
+        "numpy",
+        "typing",
+        "abc",
+        "math",
+        "ce1_core",
+        "scipy",
+        "scipy.fft",
+        "ce1_core"
+      ],
+      "exports": [
+        "DressingFunction",
+        "GaussianDressing",
+        "MellinDressing",
+        "WaveletDressing",
+        "DressedCE1Kernel",
+        "SpectrumAnalyzer",
+        "ZetaBridge",
+        "KroneckerLattice",
+        "evaluate",
+        "fourier_transform",
+        "evaluate",
+        "fourier_transform",
+        "evaluate",
+        "fourier_transform",
+        "evaluate",
+        "fourier_transform",
+        "evaluate",
+        "operator_action",
+        "discretize_kernel",
+        "compute_eigenmodes",
+        "analyze_spectrum",
+        "completed_zeta_factor",
+        "functional_equation",
+        "zeta_approx",
+        "mirror_residual",
+        "kronecker_product",
+        "fft_convolution",
+        "structured_convolution",
+        "fft",
+        "ifft",
+        "fftfreq",
+        "special_gamma"
+      ],
+      "dependencies": [
+        "ce1_core.py",
+        "ce1_core.py"
+      ],
+      "dependents": [
+        "ce1_domains.py",
+        "ce1_framework.py"
+      ]
+    },
+    "repository_metanion.py": {
+      "hash": "37dabc10252bcf781f012e827aeef4ea",
+      "last_modified": 1756947356.835312,
+      "imports": [
+        "__future__",
+        "os",
+        "re",
+        "ast",
+        "json",
+        "hashlib",
+        "typing",
+        "dataclasses",
+        "enum",
+        "collections",
+        "time",
+        "pathlib"
+      ],
+      "exports": [
+        "ChangeType",
+        "RepositoryChange",
+        "FileMetadata",
+        "RepositoryMetanion",
+        "demonstrate_repository_metanion",
+        "track_change",
+        "simulate_file_rename",
+        "simulate_class_rename",
+        "get_dependency_tree",
+        "get_change_history",
+        "export_metadata",
+        "build_tree"
+      ],
+      "dependencies": [],
+      "dependents": []
+    },
+    "morphology_demo.py": {
+      "hash": "854ba9d3c3012ee8e554e12971d694d0",
+      "last_modified": 1756947284.1532435,
+      "imports": [
+        "__future__",
+        "numpy",
+        "typing",
+        "english_morphology",
+        "ce1_core"
+      ],
+      "exports": [
+        "MorphologyInvolution",
+        "MorphologyUEO",
+        "demonstrate_ce1_morphology_integration",
+        "demonstrate_morphological_spectrum",
+        "apply",
+        "fixed_points",
+        "morph_force",
+        "morph_potential",
+        "morph_constraint",
+        "morph_mirror"
+      ],
+      "dependencies": [
+        "english_morphology.py",
+        "ce1_core.py"
+      ],
+      "dependents": []
+    },
+    "text_comparison_demo.py": {
+      "hash": "d6527f53f8ba905c16c4c700b6c02d49",
+      "last_modified": 1756947284.1577973,
+      "imports": [
+        "__future__",
+        "numpy",
+        "typing",
+        "text_analyzer"
+      ],
+      "exports": [
+        "analyze_literary_texts",
+        "analyze_different_languages_style",
+        "demonstrate_text_generation",
+        "analyze_text_evolution",
+        "demonstrate_spec_derivation_analysis",
+        "main"
+      ],
+      "dependencies": [
+        "text_analyzer.py"
+      ],
+      "dependents": []
+    },
+    "ce1_framework.py": {
+      "hash": "591afc073c862c20d27e154f920a676a",
+      "last_modified": 1756871689.637231,
+      "imports": [
+        "__future__",
+        "os",
+        "time",
+        "argparse",
+        "typing",
+        "numpy",
+        "ce1_core",
+        "ce1_convolution",
+        "ce1_jets",
+        "ce1_domains",
+        "ce1_paper",
+        "json"
+      ],
+      "exports": [
+        "CE1Framework",
+        "main",
+        "define",
+        "reflect",
+        "convolve",
+        "expand",
+        "jet",
+        "classify",
+        "compose",
+        "restrict",
+        "continue_solution",
+        "emit",
+        "run_experiment",
+        "composed_force",
+        "composed_potential",
+        "composed_constraint",
+        "composed_mirror",
+        "ComposedInvolution",
+        "apply",
+        "fixed_points"
+      ],
+      "dependencies": [
+        "ce1_core.py",
+        "ce1_convolution.py",
+        "ce1_jets.py",
+        "ce1_domains.py"
+      ],
+      "dependents": []
+    },
+    "ce1_jets.py": {
+      "hash": "9f97446c71df8177a0f9c07695848638",
+      "last_modified": 1756871689.6199389,
+      "imports": [
+        "__future__",
+        "numpy",
+        "typing",
+        "abc",
+        "math",
+        "ce1_core",
+        "ce1_core"
+      ],
+      "exports": [
+        "JetExpansion",
+        "NormalForms",
+        "RankDropAnalyzer",
+        "JetDiagnostics",
+        "compute_jet",
+        "detect_order",
+        "get_kernel_directions",
+        "fold_normal_form",
+        "cusp_normal_form",
+        "swallowtail_normal_form",
+        "butterfly_normal_form",
+        "classify_singularity",
+        "analyze_rank_drop",
+        "compare_finite_diff_ad",
+        "validate_jet_consistency",
+        "stability_analysis"
+      ],
+      "dependencies": [
+        "ce1_core.py",
+        "ce1_core.py"
+      ],
+      "dependents": [
+        "ce1_domains.py",
+        "ce1_framework.py"
+      ]
+    },
+    "morphology.py": {
+      "hash": "1f5d39f12effc97be478da7dc3a1f5cd",
+      "last_modified": 1756946911.3477247,
+      "imports": [
+        "__future__",
+        "re",
+        "numpy",
+        "typing",
+        "abc",
+        "dataclasses",
+        "enum",
+        "math"
+      ],
+      "exports": [
+        "MorphemeType",
+        "CompositionType",
+        "Morpheme",
+        "MorphologicalAnalysis",
+        "EnglishMorphologyInvolution",
+        "MorphemeTokenizer",
+        "CompositionRules",
+        "MorphologicalCapsule",
+        "CE1EnglishMorphology",
+        "demonstrate_english_morphology",
+        "apply",
+        "fixed_points",
+        "tokenize",
+        "inflect",
+        "derive",
+        "compound",
+        "phrase",
+        "process_word",
+        "analyze_word",
+        "compute_metrics",
+        "emit_analysis",
+        "mint_semantic_vector"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "text_analyzer.py",
+        "language_genetics.py",
+        "morphology_demo.py"
+      ]
+    }
+  },
+  "dependency_graph": {
+    "ce1_domains.py": [
+      "ce1_jets.py",
+      "ce1_core.py",
+      "ce1_convolution.py"
+    ],
+    "interactive_analyzer.py": [
+      "text_analyzer.py"
+    ],
+    "text_analyzer.py": [
+      "english_morphology.py"
+    ],
+    "language_genetics.py": [
+      "english_morphology.py"
+    ],
+    "ce1_convolution.py": [
+      "ce1_core.py"
+    ],
+    "morphology_demo.py": [
+      "ce1_core.py",
+      "english_morphology.py"
+    ],
+    "text_comparison_demo.py": [
+      "text_analyzer.py"
+    ],
+    "ce1_framework.py": [
+      "ce1_jets.py",
+      "ce1_core.py",
+      "ce1_convolution.py",
+      "ce1_domains.py"
+    ],
+    "ce1_jets.py": [
+      "ce1_core.py"
+    ]
+  },
+  "change_history": [
+    {
+      "change_id": "file_renamed_1756947363883",
+      "type": "file_renamed",
+      "timestamp": 1756947363.88383,
+      "file": "english_morphology.py",
+      "old_value": "english_morphology.py",
+      "new_value": "morphology.py",
+      "affected_files": []
+    },
+    {
+      "change_id": "class_renamed_1756947363883",
+      "type": "class_renamed",
+      "timestamp": 1756947363.8838542,
+      "file": "text_analyzer.py",
+      "old_value": "CE1TextAnalyzer",
+      "new_value": "TextAnalyzer",
+      "affected_files": [
+        "text_analyzer.py"
+      ]
+    }
+  ]
+}
