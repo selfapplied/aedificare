@@ -1,0 +1,68 @@
+{
+  "rule_system": {
+    "double_from": {
+      "detection_rules": [
+        "from from"
+      ],
+      "fix_strategy": "Remove duplicate \"from\" keyword",
+      "confidence_threshold": 0.2,
+      "preconditions": [
+        "file_type_python"
+      ],
+      "postconditions": [
+        "syntax_valid",
+        "pattern_resolved",
+        "double_from_fixed"
+      ]
+    },
+    "double_import": {
+      "detection_rules": [
+        "import import"
+      ],
+      "fix_strategy": "Remove duplicate \"import\" keyword",
+      "confidence_threshold": 0.2,
+      "preconditions": [
+        "file_type_python"
+      ],
+      "postconditions": [
+        "syntax_valid",
+        "pattern_resolved",
+        "double_import_fixed"
+      ]
+    },
+    "missing_parens": {
+      "detection_rules": [
+        "print without parentheses"
+      ],
+      "fix_strategy": "Add parentheses to print statements",
+      "confidence_threshold": 0.2,
+      "preconditions": [
+        "file_type_python"
+      ],
+      "postconditions": [
+        "syntax_valid",
+        "pattern_resolved",
+        "missing_parens_fixed"
+      ]
+    },
+    "unknown": {
+      "detection_rules": [],
+      "fix_strategy": "Apply general syntax correction",
+      "confidence_threshold": 0.3,
+      "preconditions": [
+        "file_type_python"
+      ],
+      "postconditions": [
+        "syntax_valid",
+        "pattern_resolved",
+        "unknown_fixed"
+      ]
+    }
+  },
+  "meta_rules": {
+    "learning_rate": 0.1,
+    "adaptation_threshold": 0.7,
+    "coherence_maintenance": 0.8,
+    "pattern_discovery_method": "field_particle_evolution"
+  }
+}

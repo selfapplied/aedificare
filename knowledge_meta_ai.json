@@ -1,0 +1,123 @@
+{
+  "model_type": "ce1_adaptive_learning",
+  "version": "1.0",
+  "timestamp": 1756976157.3412535,
+  "framework": "CurvatureModeKernel_Metanion",
+  "learned_patterns": {
+    "double_from": {
+      "frequency": 4,
+      "success_rate": 1.0,
+      "confidence": 0.4,
+      "contexts": [
+        "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+        "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+        "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+        "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n"
+      ],
+      "semantic_category": "syntax_duplication"
+    },
+    "double_import": {
+      "frequency": 4,
+      "success_rate": 1.0,
+      "confidence": 0.4,
+      "contexts": [
+        "#!/usr/bin/env python3\nimport import os\nfrom pathlib import Path\n",
+        "#!/usr/bin/env python3\nimport import os\nfrom pathlib import Path\n",
+        "#!/usr/bin/env python3\nimport import sys\nfrom pathlib import Path\n",
+        "#!/usr/bin/env python3\nimport import sys\nfrom pathlib import Path\n"
+      ],
+      "semantic_category": "syntax_duplication"
+    },
+    "missing_parens": {
+      "frequency": 4,
+      "success_rate": 1.0,
+      "confidence": 0.4,
+      "contexts": [
+        "\ndef test():\n    print \"Hello World\"\n    return \"test\"\n",
+        "\ndef test():\n    print \"Hello World\"\n    return \"test\"\n",
+        "\ndef test():\n    print \"Hello World\"\n    print \"Another line\"\n    return \"test\"",
+        "\ndef test():\n    print \"Hello World\"\n    print \"Another line\"\n    return \"test\""
+      ],
+      "semantic_category": "syntax_missing_elements"
+    },
+    "unknown": {
+      "frequency": 4,
+      "success_rate": 0.0,
+      "confidence": 0.4,
+      "contexts": [
+        "def test():\n    if True:\n    print(\"Wrong indentation\")\n    return \"test\"\n",
+        "\ndef test():\n    data = [1, 2, 3, 4, 5\n    return data\n",
+        "def test():\n    if True:\n    print(\"Wrong indentation\")\n    return \"test\"\n",
+        "\ndef test():\n    data = [1, 2, 3, 4, 5\n    return data\n"
+      ],
+      "semantic_category": "syntax_unclassified"
+    }
+  },
+  "knowledge_particles": {
+    "knowledge_double_from_0": {
+      "type": "double_from",
+      "success_rate": 0.1,
+      "usage_frequency": 2,
+      "field_strength_magnitude": 0.6056441564901436,
+      "field_phase": 0.8450132516971509,
+      "coherence": 0.8500000000000001,
+      "age_seconds": 0.0018687248229980469,
+      "evolution_trajectory": [
+        {
+          "timestamp": 1756976157.339769,
+          "success": true,
+          "success_rate": 0.1,
+          "coherence": 0.8500000000000001,
+          "field_strength": {
+            "real": 0.42411764705882354,
+            "imag": 0.4323529411764706
+          }
+        }
+      ],
+      "entanglement_network": []
+    }
+  },
+  "training_recommendations": [
+    {
+      "type": "pattern_focus",
+      "description": "Focus training on these high-success patterns",
+      "patterns": [
+        "double_from",
+        "double_import",
+        "missing_parens"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "type": "frequency_training",
+      "description": "These patterns occur frequently and need attention",
+      "patterns": [
+        "double_from",
+        "double_import",
+        "missing_parens"
+      ],
+      "confidence": 0.85
+    }
+  ],
+  "meta_instructions": {
+    "learning_approach": "quantum_field_particle_evolution",
+    "key_principles": [
+      "Store patterns as field particles with quantum-like properties",
+      "Use coherence to measure pattern reliability",
+      "Evolve knowledge through field interactions",
+      "Maintain entanglement between related patterns",
+      "Apply conservation of information principle"
+    ],
+    "adaptation_strategy": {
+      "pattern_recognition": "Use context embeddings for similarity matching",
+      "knowledge_storage": "Field particle states with evolution history",
+      "success_measurement": "Exponential moving average of fix success",
+      "coherence_maintenance": "Update coherence based on usage and success"
+    },
+    "integration_hints": {
+      "with_transformers": "Use pattern embeddings as additional context",
+      "with_rl": "Use success rates as reward signals",
+      "with_meta_learning": "Use evolution history for few-shot adaptation"
+    }
+  }
+}
