@@ -1,14 +1,14 @@
 {
   "patterns": {
-    "double_from": 1,
-    "double_import": 1,
-    "missing_parens": 1,
-    "unknown": 2
+    "double_from": 4,
+    "double_import": 4,
+    "missing_parens": 4,
+    "unknown": 4
   },
   "fixes": {
-    "double_from": 1,
-    "double_import": 1,
-    "missing_parens": 1
+    "double_from": 4,
+    "double_import": 4,
+    "missing_parens": 4
   },
   "failures": {},
   "contexts": {
@@ -17,6 +17,21 @@
         "file": "test_double_from.py",
         "context": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
         "timestamp": 1756970428.9865532
+      },
+      {
+        "file": "test_double_from.py",
+        "context": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+        "timestamp": 1756975894.9992368
+      },
+      {
+        "file": "test_fresh_double_from.py",
+        "context": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+        "timestamp": 1756976111.3666668
+      },
+      {
+        "file": "test_fresh_double_from.py",
+        "context": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+        "timestamp": 1756976157.3394876
       }
     ],
     "double_import": [
@@ -24,6 +39,21 @@
         "file": "test_double_import.py",
         "context": "#!/usr/bin/env python3\nimport import os\nfrom pathlib import Path\n",
         "timestamp": 1756970428.987169
+      },
+      {
+        "file": "test_double_import.py",
+        "context": "#!/usr/bin/env python3\nimport import os\nfrom pathlib import Path\n",
+        "timestamp": 1756975894.999638
+      },
+      {
+        "file": "test_fresh_double_import.py",
+        "context": "#!/usr/bin/env python3\nimport import sys\nfrom pathlib import Path\n",
+        "timestamp": 1756976111.3673325
+      },
+      {
+        "file": "test_fresh_double_import.py",
+        "context": "#!/usr/bin/env python3\nimport import sys\nfrom pathlib import Path\n",
+        "timestamp": 1756976157.3400152
       }
     ],
     "missing_parens": [
@@ -31,6 +61,21 @@
         "file": "test_missing_parens.py",
         "context": "\ndef test():\n    print \"Hello World\"\n    return \"test\"\n",
         "timestamp": 1756970428.987346
+      },
+      {
+        "file": "test_missing_parens.py",
+        "context": "\ndef test():\n    print \"Hello World\"\n    return \"test\"\n",
+        "timestamp": 1756975894.9998744
+      },
+      {
+        "file": "test_fresh_missing_parens.py",
+        "context": "\ndef test():\n    print \"Hello World\"\n    print \"Another line\"\n    return \"test\"",
+        "timestamp": 1756976111.36774
+      },
+      {
+        "file": "test_fresh_missing_parens.py",
+        "context": "\ndef test():\n    print \"Hello World\"\n    print \"Another line\"\n    return \"test\"",
+        "timestamp": 1756976157.3403194
       }
     ],
     "unknown": [
@@ -43,8 +88,18 @@
         "file": "test_brackets.py",
         "context": "\ndef test():\n    data = [1, 2, 3, 4, 5\n    return data\n",
         "timestamp": 1756970428.9878569
+      },
+      {
+        "file": "test_indentation.py",
+        "context": "def test():\n    if True:\n    print(\"Wrong indentation\")\n    return \"test\"\n",
+        "timestamp": 1756975895.000198
+      },
+      {
+        "file": "test_brackets.py",
+        "context": "\ndef test():\n    data = [1, 2, 3, 4, 5\n    return data\n",
+        "timestamp": 1756975895.0003119
       }
     ]
   },
-  "last_updated": 1756970428.9878888
+  "last_updated": 1756976157.3407512
 }

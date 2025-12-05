@@ -1,0 +1,30 @@
+{
+  "embedding_dimension": 8,
+  "embeddings": {
+    "knowledge_double_from_0": {
+      "vector": [
+        0.403921568627451,
+        0.4117647058823529,
+        0.5529411764705883,
+        0.8274509803921568,
+        0.023529411764705882,
+        0.09411764705882353,
+        0.26666666666666666,
+        0.4235294117647059
+      ],
+      "pattern_type": "double_from",
+      "semantic_tags": [],
+      "similarity_cluster": 1
+    }
+  },
+  "similarity_matrix": [
+    [
+      1.0
+    ]
+  ],
+  "clustering_info": {
+    "cluster_1": [
+      "knowledge_double_from_0"
+    ]
+  }
+}

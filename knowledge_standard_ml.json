@@ -1,0 +1,175 @@
+{
+  "training_data": [
+    {
+      "input": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+      "label": "double_from",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_double_from.py",
+        "timestamp": 1756970428.9865532
+      }
+    },
+    {
+      "input": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+      "label": "double_from",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_double_from.py",
+        "timestamp": 1756975894.9992368
+      }
+    },
+    {
+      "input": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+      "label": "double_from",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_fresh_double_from.py",
+        "timestamp": 1756976111.3666668
+      }
+    },
+    {
+      "input": "#!/usr/bin/env python3\nfrom from pathlib import Path\nimport os\n",
+      "label": "double_from",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_fresh_double_from.py",
+        "timestamp": 1756976157.3394876
+      }
+    },
+    {
+      "input": "#!/usr/bin/env python3\nimport import os\nfrom pathlib import Path\n",
+      "label": "double_import",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_double_import.py",
+        "timestamp": 1756970428.987169
+      }
+    },
+    {
+      "input": "#!/usr/bin/env python3\nimport import os\nfrom pathlib import Path\n",
+      "label": "double_import",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_double_import.py",
+        "timestamp": 1756975894.999638
+      }
+    },
+    {
+      "input": "#!/usr/bin/env python3\nimport import sys\nfrom pathlib import Path\n",
+      "label": "double_import",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_fresh_double_import.py",
+        "timestamp": 1756976111.3673325
+      }
+    },
+    {
+      "input": "#!/usr/bin/env python3\nimport import sys\nfrom pathlib import Path\n",
+      "label": "double_import",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_fresh_double_import.py",
+        "timestamp": 1756976157.3400152
+      }
+    },
+    {
+      "input": "\ndef test():\n    print \"Hello World\"\n    return \"test\"\n",
+      "label": "missing_parens",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_missing_parens.py",
+        "timestamp": 1756970428.987346
+      }
+    },
+    {
+      "input": "\ndef test():\n    print \"Hello World\"\n    return \"test\"\n",
+      "label": "missing_parens",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_missing_parens.py",
+        "timestamp": 1756975894.9998744
+      }
+    },
+    {
+      "input": "\ndef test():\n    print \"Hello World\"\n    print \"Another line\"\n    return \"test\"",
+      "label": "missing_parens",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_fresh_missing_parens.py",
+        "timestamp": 1756976111.36774
+      }
+    },
+    {
+      "input": "\ndef test():\n    print \"Hello World\"\n    print \"Another line\"\n    return \"test\"",
+      "label": "missing_parens",
+      "weight": 1.0,
+      "metadata": {
+        "file": "test_fresh_missing_parens.py",
+        "timestamp": 1756976157.3403194
+      }
+    },
+    {
+      "input": "def test():\n    if True:\n    print(\"Wrong indentation\")\n    return \"test\"\n",
+      "label": "unknown",
+      "weight": 0.0,
+      "metadata": {
+        "file": "test_indentation.py",
+        "timestamp": 1756970428.9875891
+      }
+    },
+    {
+      "input": "\ndef test():\n    data = [1, 2, 3, 4, 5\n    return data\n",
+      "label": "unknown",
+      "weight": 0.0,
+      "metadata": {
+        "file": "test_brackets.py",
+        "timestamp": 1756970428.9878569
+      }
+    },
+    {
+      "input": "def test():\n    if True:\n    print(\"Wrong indentation\")\n    return \"test\"\n",
+      "label": "unknown",
+      "weight": 0.0,
+      "metadata": {
+        "file": "test_indentation.py",
+        "timestamp": 1756975895.000198
+      }
+    },
+    {
+      "input": "\ndef test():\n    data = [1, 2, 3, 4, 5\n    return data\n",
+      "label": "unknown",
+      "weight": 0.0,
+      "metadata": {
+        "file": "test_brackets.py",
+        "timestamp": 1756975895.0003119
+      }
+    }
+  ],
+  "feature_vectors": {
+    "knowledge_double_from_0": [
+      0.403921568627451,
+      0.4117647058823529,
+      0.5529411764705883,
+      0.8274509803921568,
+      0.023529411764705882,
+      0.09411764705882353,
+      0.26666666666666666,
+      0.4235294117647059
+    ]
+  },
+  "label_encoding": {
+    "double_from": 0,
+    "double_import": 1,
+    "missing_parens": 2,
+    "unknown": 3
+  },
+  "performance_metrics": {
+    "overall_success_rate": 1.0,
+    "pattern_accuracies": {
+      "double_from": 1.0,
+      "double_import": 1.0,
+      "missing_parens": 1.0,
+      "unknown": 0.0
+    }
+  }
+}
